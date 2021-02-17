@@ -265,29 +265,87 @@
 
 // we can construct dom elements by using the vanilla JavaScript.
 // create element
-const li = document.createElement('li');
-// add class
-li.className = 'collection-item';
-// add id
-li.id = 'new-item';
+// const li = document.createElement('li');
+// // add class
+// li.className = 'collection-item';
+// // add id
+// li.id = 'new-item';
 
-// add attribute
-li.setAttribute('title', 'New Item');
-// create text node and append it
-li.appendChild(document.createTextNode('Hello World'));
-// create new link element
-const link = document.createElement('a');
-// add classes
-link.className = 'delete-item secondary-content';
-// add icon html
-link.innerHTML = '<i class="fa fa-remove"></i>';
-// append link into li
-li.appendChild(link);
+// // add attribute
+// li.setAttribute('title', 'New Item');
+// // create text node and append it
+// li.appendChild(document.createTextNode('Hello World'));
+// // create new link element
+// const link = document.createElement('a');
+// // add classes
+// link.className = 'delete-item secondary-content';
+// // add icon html
+// link.innerHTML = '<i class="fa fa-remove"></i>';
+// // append link into li
+// li.appendChild(link);
 
-// append li as child to ul
-document.querySelector('ul').appendChild(li);
+// // append li as child to ul
+// document.querySelector('ul').appendChild(li);
 
-console.log(li);
+// console.log(li);
+
 /*************************
 /* Creating the elements END*/
+/*************************/
+
+
+/*************************
+/* Removing and replacing elements*/
+/*************************/
+
+// // Replace element
+
+// // create element
+// const newHeading = document.createElement('h2');
+// // add id 
+// newHeading.id = 'task-title';
+// // New text node
+// newHeading.appendChild(document.createTextNode('Task List'));
+// // get the old heading
+// const oldHeading = document.getElementById('task-title');
+// // parent
+// const cardAction = document.querySelector('.card-action');
+// // replace
+// cardAction.replaceChild(newHeading, oldHeading);
+// // remove element
+// const lis = document.querySelectorAll('li');
+// const list = document.querySelector('ul');
+
+// // Remove list item
+// lis[0].remove();
+// // remove child element
+// list.removeChild(lis[3]);
+
+// // Classes and attributes
+// const firstLi = document.querySelector('li:first-child');
+// const link = firstLi.children[0];
+// let val;
+
+
+// // classes
+// val = link.className;
+// val = link.classList;
+// val = link.classList[0];
+// link.classList.add('test');
+// link.classList.remove('test');
+// val = link;
+
+// // attributes
+// val = link.getAttribute('href');
+// val = link.setAttribute('href', 'http://google.com');
+// link.setAttribute('title', 'Google');
+// val = link.hasAttribute('title');
+// link.removeAttribute('title');
+// val = link;
+
+// console.log(val);
+
+
+/*************************
+/* Removing and replacing elements END*/
 /*************************/
