@@ -580,6 +580,59 @@
 /*************************
 /* Local and Session Storage*/
 /*************************/
+/** The difference between local storage and session storage is that local storage will stay until you 
+ * manually clear it out in your settings or through your program and session storage will leave It will go away 
+ * once your browser is closed.*/
+
+// set local storage item
+//localStorage.setItem('name','Steve');
+//localStorage.setItem('age','30');
+
+// set session storage item
+//sessionStorage.setItem('name','Jimmy');
+
+// remove from storage
+//localStorage.removeItem('name');
+
+// get from Storage
+// const name = localStorage.getItem('name');
+// const age = localStorage.getItem('age');
+// console.log(name,age);
+
+
+// // clear local storage
+// localStorage.clear();
+
+// document.querySelector('form').addEventListener('submit',
+// function(e){
+//     const task = document.getElementById('task').value;
+
+
+//     let tasks;
+
+//     if(localStorage.getItem('tasks') === null)
+//     {
+//         tasks = [];
+    
+//     }
+//     else
+//     {
+//         tasks = JSON.parse(localStorage.getItem('tasks'));
+//     }
+
+//     tasks.push(task);
+
+//     localStorage.setItem('tasks',JSON.stringify(tasks));
+//     alert('Task saved');
+
+//     e.preventDefault();
+// });
+
+// const tasks = JSON.parse(localStorage.getItem('tasks'));
+
+// tasks.forEach(function(task){
+//     console.log(task);
+// })
 
 
 /*************************
