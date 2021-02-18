@@ -501,3 +501,76 @@
 /*************************
 /* Keyboard & Input Events END*/
 /*************************/
+
+
+
+/*************************
+/* Event Bubbling & Delegation*/
+/*************************/
+
+// What is event bubbling?
+/** Event bubbling is a type of event propagation where the event first triggers on the innermost target of the element and then
+ * successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost
+ * DOM element or document object (Provided the handler is initialized).
+ * 
+*/
+
+// Event bubbling
+
+// document.querySelector('.card-title').addEventListener('click', 
+// function() {
+//     console.log('card-title');
+// });
+
+// document.querySelector('.card-content').addEventListener('click',
+// function(){
+//     console.log('card-content');
+// });
+
+// document.querySelector('.card').addEventListener('click', 
+// function(){
+//     console.log('card');
+// });
+
+// document.querySelector('.col').addEventListener('click',
+// function(){
+//     console.log('col');
+// }); 
+
+// What is event delegation ?
+/** DOM event delegation is a mechanism  of responding to ui-events via a single common parent rather
+ * than each child, through the magic of event "bubbling" (aka - also known as : event propagation)
+ * 
+ * The whole idea behind event delegation is that instead of listening for a change on the inputs directly,
+ * we should look for an HTML element that is going to be on the page when the page initially loads. 
+*/
+
+// Event Delegation
+
+// const delItem = document.querySelector('.delete-item');
+
+// delItem.addEventListener('click', deleteItem);
+
+//document.body.addEventListener('click',deleteItem);
+
+
+// function deleteItem(e){
+// //     if(e.target.parentElement.className === 'delete-item secondary-content')
+// //     {
+// //         console.log('delete item');
+// //     }
+// // }
+
+
+// if(e.target.parentElement.classList.contains('delete-item'))
+// {
+//     console.log('delete item');
+//     e.target.parentElement.parentElement.remove(); // removes the list of tasks.
+// }
+
+// }
+
+
+/*************************
+/* Event Bubbling & Delegation END*/
+/*************************/
