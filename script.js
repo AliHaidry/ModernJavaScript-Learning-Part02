@@ -450,44 +450,44 @@
 /* Keyboard & Input Events*/
 /*************************/
 
-const form = document.querySelector('form');
-const taskInput = document.getElementById('task');
-const heading = document.querySelector('h5');
+// const form = document.querySelector('form');
+// const taskInput = document.getElementById('task');
+// const heading = document.querySelector('h5');
 
-// clear input
-taskInput.value = "";
+// // clear input
+// taskInput.value = "";
 
-//form.addEventListener('submit', runEvent);
+// //form.addEventListener('submit', runEvent);
 
-//Keydown
-//taskInput.addEventListener('keydown',runEvent);
+// //Keydown
+// //taskInput.addEventListener('keydown',runEvent);
 
-//Keydown
-//taskInput.addEventListener('keyup',runEvent);
+// //Keydown
+// //taskInput.addEventListener('keyup',runEvent);
 
-// Keypress
-//taskInput.addEventListener('keypress', runEvent);
+// // Keypress
+// //taskInput.addEventListener('keypress', runEvent);
 
-// Focus
-//taskInput.addEventListener('focus', runEvent);
+// // Focus
+// //taskInput.addEventListener('focus', runEvent);
 
-// Blur
-//taskInput.addEventListener('blur',runEvent);
+// // Blur
+// //taskInput.addEventListener('blur',runEvent);
 
-// Cut
-//taskInput.addEventListener('cut',runEvent);
+// // Cut
+// //taskInput.addEventListener('cut',runEvent);
 
-// Paste
-//taskInput.addEventListener('paste', runEvent);
+// // Paste
+// //taskInput.addEventListener('paste', runEvent);
 
-// Input 
-taskInput.addEventListener('input',runEvent);
+// // Input 
+// taskInput.addEventListener('input',runEvent);
 
 
 
-function runEvent(e)
-{
-    console.log(`EVENT TYPE: ${e.type}`);
+// function runEvent(e)
+// {
+//     console.log(`EVENT TYPE: ${e.type}`);
 
     //console.log(e.target.value);
 
@@ -496,7 +496,7 @@ function runEvent(e)
 //     console.log(taskInput.value);
 
 //     e.preventDefault(); // use it when working with forms.
-}
+//}
 
 /*************************
 /* Keyboard & Input Events END*/
